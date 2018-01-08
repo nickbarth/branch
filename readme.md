@@ -5,7 +5,7 @@ branch is sample utility for switching branches using [chooser](https://github.c
 ### Installation
 
 ```bash
-brew install
+brew install https://raw.githubusercontent.com/nickbarth/branch/master/branch.rb
 ```
 
 ### Usage
