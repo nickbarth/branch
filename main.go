@@ -7,6 +7,7 @@ import (
 	"log"
 	"os"
 	"os/exec"
+	"strings"
 )
 
 func (r repo) valid() bool {
@@ -80,8 +81,9 @@ func main() {
 
 	os.Chdir(repo.path)
 
+	args := strings.Join(os.Args[1:], " ")
 	chooser := chooser.NewChooser(5, 0)
-	choice := chooser.Choose(repo.branches())
+	choice := chooser.Choose(args, repo.branches())
 
 	if len(choice) > 0 {
 		repo.setBranch(choice)
