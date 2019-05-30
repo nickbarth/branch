@@ -1,6 +1,6 @@
 # branch
 
-branch is sample utility for switching branches using [chooser](https://github.com/nickbarth/chooser).
+For switching branches using the [chooser](https://github.com/nickbarth/chooser) fuzzy search.
 
 ### Installation
 
